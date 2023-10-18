@@ -350,6 +350,16 @@ new Portfolio(
     3,
     "Alabama"
   ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1aIoiRCE8p5C4Ye4XXkVZik2F46k1vNxq/view?usp=sharing',
+    2022,
+    'Regionals',
+    'Design',
+    '24KARAT',
+    20744,
+    2,
+    "Ohio"
+  ),
 
 
 ];
