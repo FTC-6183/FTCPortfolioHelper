@@ -360,6 +360,15 @@ new Portfolio(
     2,
     "Ohio"
   ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1FU9wWpuAnSYoQTdRZ1xrGqVxTLwS0DL9/view?usp=drivesdk',
+    2021,
+    'Worlds',
+    'Design',
+    'Kuriosity Robotics',
+    12635,
+    1
+  ),
 
 
 ];
