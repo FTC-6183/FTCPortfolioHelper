@@ -188,7 +188,7 @@ new Portfolio(
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1JKHxy37gIhD0CQL5paDs8IX7Z7r6RIlP/view?usp=drivesdk',
-    2020,
+    0,
     'Regionals',
     'Inspire',
     'T.H.O.R.',
@@ -367,8 +367,62 @@ new Portfolio(
     'Design',
     'Kuriosity Robotics',
     12635,
-    1
+    1,
+    "CA-NorCal",
+  ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1CKFj_G6W__o3WMLjuCc3U7GH1GBll5L4/view?usp=drivesdk',
+    2021,
+    'States',
+    'Inspire',
+    'CircuitRunners Robotics - Surge',
+    1002,
+    1,
+    "Georgia"
+
+  ),
+new Portfolio(
+    'https://drive.google.com/file/d/1NfZqoh4ZaUnfbtFu7jICubrkeH1KXH9V/view?usp=drivesdk',
+    2021,
+    'Worlds',
+    'Innovate',
+    'CircuitRunners Robotics - Surge',
+    1002,
+    3,
+    "Georgia"
+  ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1R_LbffFqiJXx7hGyS-8Rjgn7Gg3Hsg4J/view?usp=sharing    ',
+    2022,
+    'Regionals',
+    'Think',
+    'Quantam Quacks',
+    16072,
+    1,
+    "North Carolina"
+  ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1nizWRKi86aodHx5JFGBLpnrvIlSSMdSd/view?usp=sharing    ',
+    2021,
+    'Regionals',
+    'Connect',
+    'Quantam Quacks',
+    16072,
+    1,
+    "North Carolina"
+
+  ),
+  new Portfolio(
+    'https://drive.google.com/file/d/1gb2kYOPF264lXoiyCSkOsoL0W38AP_aB/view?usp=sharing    ',
+    2022,
+    'Worlds',
+    'Innovate',
+    'CircuitRunners Robotics - Surge    ',
+    1002,
+    'Finalist',
+    "CA-NorCal"
   ),
 
 
-];
+
+].sort((a,b) => a.teamNumber - b.teamNumber);

@@ -13,6 +13,11 @@ module.exports = {
       borderImageSource: {
         'gradient-black-blue': 'linear-gradient(to right, var(--tw-gradient-stops))',
       },
+      colors: {
+        'owl-blue': '#224979',
+        'owl-orange': '#DB572E',
+      },
+
     },
   },
   plugins: [],

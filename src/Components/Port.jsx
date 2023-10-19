@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const PortBar = (props) => {
   return (
       <div className="px-8 max-w-screen-lg">
-          <div className="border-4 border-orange-500 p-4 rounded-lg mb-4 bg-white " key={props.index}>
+      <div className={`border-4 border-owl-orange p-4 rounded-lg mb-4 bg-white`} key={props.index}>
             <div className="border-2 p-4 rounded-lg mb-4 bg-transparent text-black text-2xl">
               <div className="mr-4">
                 <strong>Name:</strong> {props.name}
@@ -15,7 +15,7 @@ const PortBar = (props) => {
               </div>
               <div className="mr-4">
                 <strong>URL:</strong>{' '}
-                <a target="_blank" href={props.url} className="text-blue-500">
+                <a target="_blank" href={props.url} className="text-owl-blue">
                   Link <FontAwesomeIcon icon={faArrowRight} className="ml-1" />
                 </a>
               </div>
@@ -23,7 +23,7 @@ const PortBar = (props) => {
                 <strong>Award:</strong> {props.award} {props.place}
               </div>
               <div className="mr-4">
-                <strong>Season:</strong> {props.season + 1}
+                <strong>Season:</strong> {props.season}
               </div>
               <div className="mr-4">
                 <strong>Level:</strong> {props.level}

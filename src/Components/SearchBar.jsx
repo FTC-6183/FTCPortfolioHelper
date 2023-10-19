@@ -140,7 +140,7 @@ const isOptionDisabled = (optionValue) => {
             />
           </div>
         ) : null}
-        <button   className={`${disable ? 'bg-slate-500' : 'bg-blue-500'} text-white py-2 px-4 rounded-full mt-4`}
+        <button   className={`${disable ? 'bg-slate-500' : 'bg-owl-blue'} text-white py-2 px-4 rounded-full mt-4`}
   onClick={handleSearch} disabled = {disable}>
           <FontAwesomeIcon icon={faSearch} className="mr-1" /> Search
         </button>
