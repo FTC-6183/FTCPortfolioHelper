@@ -16,7 +16,8 @@ const PortResults = ( { returnUrls } ) => {
             place = {port.getPlace()} 
             region = {port.getRegion()}
             season = {port.getSeason()} 
-            level = {port.getLevel()} />
+            level = {port.getLevel()}
+            seasonDisplay = {port.seasonDisplay} />
           ))}
         </div>
       );

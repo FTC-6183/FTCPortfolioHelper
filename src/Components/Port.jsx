@@ -23,7 +23,7 @@ const PortBar = (props) => {
                 <strong>Award:</strong> {props.award} {props.place}
               </div>
               <div className="mr-4">
-                <strong>Season:</strong> {props.season}
+                <strong>Season:</strong> {props.seasonDisplay}
               </div>
               <div className="mr-4">
                 <strong>Level:</strong> {props.level}

@@ -9,6 +9,18 @@ export class Portfolio {
       this.awardPlace = awardPlace; 
       this.region = region; 
       this.id = id
+      console.log(season)
+      if (season === 2020) { 
+          this.seasonDisplay = "2020-2021 Ultimate Goal"
+      }
+      else if        (season === 2021) { 
+        this.seasonDisplay = "2021-2022 Freight Frenzy"
+      }
+    else if        (season === 2022) { 
+      this.seasonDisplay = "2022-2023 Powerplay"
+    }
+    console.log(this.seasonDisplay)
+
     }
   
     getUrl() { 
