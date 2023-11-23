@@ -101,7 +101,7 @@ const isOptionDisabled = (optionValue) => {
       <div className="px-8" style={{ display: 'flex', justifyContent: 'left' }}>
         <div className="mr-2">
           <select
-            className="border border-gray-300 rounded py-2 px-4 mr-8 mt-4"
+            className="bg-box border border-gray-300 text-white rounded py-2 px-4 mr-8 mt-4"
             value={awardFilter}
             onChange={handleAwardFilterChange}
           >
@@ -118,7 +118,7 @@ const isOptionDisabled = (optionValue) => {
         </div>
         <div className="mr-2">
           <select
-            className="border border-gray-300 rounded py-2 mr-8 px-4 mt-4"
+            className="bg-box border text-white border-gray-300 rounded py-2 mr-8 px-4 mt-4"
             value={levelFilter}
             onChange={handleLevelFilterChange}
           >
@@ -132,7 +132,7 @@ const isOptionDisabled = (optionValue) => {
         {levelFilter === 'Regionals' || levelFilter === 'Qualifiers' ? (
           <div className="mr-2">
             <Select
-              className="w-64 mt-4"
+              className="w-64 mt-4 bg-box text-white"
               placeholder="(Optional) Select a region"
               isClearable
               options={regionOptions}
@@ -145,7 +145,7 @@ const isOptionDisabled = (optionValue) => {
           <FontAwesomeIcon icon={faSearch} className="mr-1" /> Search
         </button>
       </div>
-      <div className="ml-9">
+      <div className="ml-9 text-white">
         <p>Search results: {returnUrls.length}</p>
       </div>
     </div>

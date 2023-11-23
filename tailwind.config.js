@@ -16,6 +16,8 @@ module.exports = {
       colors: {
         'owl-blue': '#224979',
         'owl-orange': '#DB572E',
+        'box': '#1e2028',
+        'dark-bg': '#17191e',
       },
 
     },
