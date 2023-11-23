@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "./Components/Footer"
 import PortSearch from "./Components/PortSearch";
 import Team from "./Components/Team"
-import Port from "./Components/Port"
 function App() {
   return (
     <div className = "fixed inset-0 overflow-y-scroll" style={{ fontFamily: 'Montserrat, sans-serif'} } > 
