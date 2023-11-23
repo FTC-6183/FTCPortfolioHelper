@@ -44,7 +44,7 @@ new Portfolio(
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1Yi771Z064j4nmRHnzyWLbK8cb5y6ensc/view',
-    2022,
+    2021,
     'Regionals',
     'None',
     'Everglow',
@@ -78,10 +78,10 @@ new Portfolio(
     'https://drive.google.com/file/d/1-HaAiXM0J1AhH0iaqDkCEdsq7I6AQRKh/view?usp=drivesdk',
     2021,
     'Regionals',
-    'Innovate ',
+    'Inspire ',
     'Spare Parts',
     288,
-    3,
+    1,
     "Missouri-Kansas"
   ),
 new Portfolio(
@@ -158,7 +158,7 @@ new Portfolio(
     'https://drive.google.com/file/d/17ts0AyVxj_DJ5dxF3P0RuzLfeDxJVSYh/view?usp=drivesdk',
     2021,
     'Worlds',
-    'Nothing',
+    'None',
     'Team Without a Cool Acronym',
     16091,
     null,
@@ -179,7 +179,7 @@ new Portfolio(
     'https://drive.google.com/file/d/117ZIUZI7fnEdhR3qKvqq0aQ7jGsUtIQG/view?usp=drivesdk',
     2021,
     'Regionals',
-    'Nothing',
+    'None',
     'Night Owls',
     10195
     ,
@@ -200,7 +200,7 @@ new Portfolio(
     'https://drive.google.com/file/d/1pgTptjwJnBg0MiexpHs5V5IcSn2bZjgt/view?usp=drivesdk',
     2022,
     'Regionals',
-    'Nothing',
+    'None',
     'Firefly',
     9064,
     null,
@@ -221,7 +221,7 @@ new Portfolio(
     'http://bit.ly/3YYyTaM',
     2022,
     'Regionals',
-    'Nothing',
+    'None',
     'Sisters of the Motherboard',
     7444,   
      null,
@@ -262,7 +262,7 @@ new Portfolio(
     'https://drive.google.com/file/d/1-r9mZwOO1HIt6Ndc0k2N-uYRQX2UHigL/view?usp=drivesdk',
     2021,
     'Worlds',
-    'Nothing',
+    'None',
     'F.R.O.G Frog Robots of Germany',
     10183,
     null,
@@ -292,7 +292,7 @@ new Portfolio(
     'https://drive.google.com/file/d/1fclGCD-nzzeo1QBWZjfymR4SwMl97e7N/view?usp=drive_link', //wrong notebook?
     2022,
     'Worlds',
-    'Nothing',
+    'None',
     'Ohm Raiders',
     11468,
     null,
@@ -373,7 +373,7 @@ new Portfolio(
   new Portfolio(
     'https://drive.google.com/file/d/1CKFj_G6W__o3WMLjuCc3U7GH1GBll5L4/view?usp=drivesdk',
     2021,
-    'States',
+    'Regionals',
     'Inspire',
     'CircuitRunners Robotics - Surge',
     1002,
@@ -420,70 +420,89 @@ new Portfolio(
     'CircuitRunners Robotics - Surge    ',
     1002,
     'Finalist',
-    "CA-NorCal"
+    "Georgia"
   ),
 
 
   new Portfolio(
     'https://drive.google.com/file/d/1ikjJQyTCAZtsihuesrip-4nT3HAddKHA/view',
-    2022,
-    'States',
+    2021,
+    'Regionals',
     'None',
     'ROBOKEY',
-    20963
+    20963,
+    null,
+    'Romania',
   ),
 
 new Portfolio(
     'https://drive.google.com/file/d/1Nj132z4uXUeY2nhlw_mW4_vJTLAul4shcWDfc7lFBa0/view',
     2022,
-    'States',
+    'Regionals',
     'Control',
     'Metrobotics',
     14212,
-    1
+    1,
+    'New York - NYC',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1WXklCHxZ0sBJ85_xzLZfk2lXfS1p67mQ/view?usp=drivesdk',
     2021,
-    'States',
+    'Regionals',
     'None',
     'Tacobotics',
-    18369
+    18369,
+    null,
+    'Iowa',
   ),
 
 new Portfolio(
     'https://drive.google.com/file/d/12obKljuXU87bNrqK39z1a_4NLCeM53qe/view',
     2021,
-    'States',
+    'Regionals',
     'None',
     'Thunderbolts in Disguise',
-    18140
+    18140,
+    null,
+    'Texas - Houston',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1smRuG-DgZ_mCt_2eG_G14JpAcm8YeZmM/view',
-    2022,
+    2021,
     'Control',
     'Regionals',
     'Protocol 3',
     17520,
-    1
+    1,
+    'Oregon',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1YS8bXsOQ30YTk_3abN4nD0jEeXFq29yB/view',
-    2022,
+    2021,
     'Worlds',
     'None',
     'Newt.exe',
-    17080
+    17080,
+    null,
+    'Chesapeake',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1Ufg2t8qW-vhH7CrsiNtTHavHCn23bklf/view',
-    2022,
-    'States',
+    2021,
+    'Regionals',
     'Think',
     'Bots in Black',
     16633,
-    1
+    1,
+    'Georgia',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/18mUIdXKA-zyXXsyzHNCWVZU4qya9arqJ/view',
@@ -492,7 +511,9 @@ new Portfolio(
     'Think',
     'Java Like It\'s Hot',
     16553,
-    1
+    1,
+    'Louisiana',
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1wSkkZyvcX5iaXPFEIc6KtKT5_p1817Gi/view',
@@ -501,44 +522,44 @@ new Portfolio(
     'Think',
     'Juice',
     16236,
-    1
+    1,
+    'California - NorCal',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1nT86VotoR_wEH_jCuJGtm9HjX24lxdxf/view',
     2022,
-    'States',
+    'Regionals',
     'Design',
     'Circuit Breakers',
     16232,
-    3
-  ),
-new Portfolio(
-    'https://drive.google.com/file/d/1Ufg2t8qW-vhH7CrsiNtTHavHCn23bklf/view',
-    2022,
-    'Worlds',
-    'Think',
-    'Bots in black',
-    16091,
-    1
-  ),
+    3,
+   'Minnesota',
+),
 
 new Portfolio(
     'https://drive.google.com/file/d/1QjhpWx3fG228G8vXc7JVTkenESFqrBM_/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Inspire',
     'Astromechs',
     3409,
-    2
+    2,
+    'Missouri',
+
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1E2-qA8EumXqHmvOagwKHN0oPJw32sYtQ/view?usp=drivesdk',
     2021,
+    'Regionals',
     'Inspire',
-    'States',
     'Astromechs',
     3409,
-    1
+    1,
+    'Missouri',
+
   ),
 
 new Portfolio(
@@ -548,7 +569,9 @@ new Portfolio(
     'Innovate',
     'Team Wolves',
     5189,
-    1
+    1,
+    'Texas - Central',
+
    
   ),
 
@@ -559,16 +582,19 @@ new Portfolio(
     'Connect',
     'Tungsteel',
     5881,
-    1
+    1,
+    'North Carolina',
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1XnO7WAnMTDCPVIUEPYgmQ6XkMHraiMKt/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Connect',
     'e-lemon-ators',
     5890,
-    2
+    2,
+    'Texas - Central',
   ),
 
 
@@ -576,28 +602,32 @@ new Portfolio(
     'https://drive.google.com/file/d/1QnTMEDBAyzFrY80HPUmdBKBNCUgWrYrz/view?usp=drivesdk',
     2021,
     'Regionals',
-    'Motivate',
+    'None',
     'The Indecision Matrices',
     6527,
-    1
+    null,
+    'Rhode Island',
   ),
 
 new Portfolio(
     'https://drive.google.com/file/d/1icJGESZWLSvKITaV2EvRj8JfqZVOSTfH/view?usp=drivesdk',
     2021,
-    'States',
-    'Nothing',
+    'Regionals',
+    'None',
     'BrickBot',
-    15996
+    15996,
+    null,
+    'Romania',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1UpIHjDn8yb-teKf5t0fvdo2IxHQVsSK4/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Design',
     'Weber RamBots:',
     14943,
-    1
+    1,
+    'Georgia',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1_k9yoCJK8hDffg3SlhtRDH7FPyq1gQc3/view?usp=drivesdk',
@@ -606,59 +636,70 @@ new Portfolio(
     'Control',
     'Alpacas',
     14535,
-    1
+    1,
+    'California - San Diego',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1oKppTjHvnINdLt5Z4xc0B3xTPDLffkKR/view?usp=drivesdk',
     2021,
     'Worlds',
-    'Nothing',
+    'None',
     'Roaring Robotics',
-    14436
+    14436,
+    null,
+    'Arizona',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1SRmvt0MWoay9grHCfHhZXta3N41MeBm8/view?usp=drivesdk',
     2022,
-    'States',
+    'Regionals',
     'Motivate',
     'Quantum Robotics',
     14270,
-    1
+    1,
+    'Romania',
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/13LtUCehKWFkSinvkZMYPeBOKsTd8WUtM/view?usp=drivesdk',
     2021,
-    'States',
+    'Regionals',
     'Judges',
     'The Java Jokers',
     13828,
-    1
+    1,
+    'Wisconsin',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1YFm8YJ3S3PmrFkhCnbYnqCOmd1ikm57l/view?usp=drivesdk',
     2022,
     'Regionals',
-    'Nothing',
+    'None',
     'Code Blue',
-    13193
+    13193,
+    null, 
+
+    'Illinois',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1Tfo91rcNJ80USFZrTdjlvEt3NGZRxbAq/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Innovate',
     'Free Wifi',
     13181,
-    3
+    3,
+    'Rhode Island',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/13tTEnPS-lA7dqWkJsoAAqKawqDtzI4pL/view?usp=drivesdk',
     2022,
-    'States',
+    'Regionals',
     'Inspire',
     'Berserk Robotics',
     13053,
-    1
+    1,
+    'Texas - Central',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/18UfKrBYk_UaXE0KdQ_unn-xgC_ppD30S/view?usp=drivesdk',
@@ -667,57 +708,67 @@ new Portfolio(
     'Inspire',
     'Space Turtles',
     12547,
-    1
+    1,
+    'Washington',
   ),
 
 
 new Portfolio(
     'https://drive.google.com/file/d/1hTnRMOVD97SLEzqGPZN61TpLzGgaph6w/view?usp=drivesdk',
     2021,
-    'States',
+    'Regionals',
     'Motivate',
     'Atomic Gears',
     10641,
-    1
+    1,
+    'Oklahoma',
   ),
 
 
 new Portfolio(
     'https://drive.google.com/file/d/1OONW639qH39dJpNdJikqc_LUufwx2WuU/view?usp=drivesdk',
     2022,
-    'States',
+    'Regionals',
     'Control',
     'Tech Turtles',
     10179,
-    2
+    2,
+    'Florida',
+
   ),
 
 new Portfolio(
     'https://drive.google.com/file/d/1JKHxy37gIhD0CQL5paDs8IX7Z7r6RIlP/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Inspire',
     'T.H.O.R.',
     9974,
-    3
+    3,
+    'Iowa',
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1cbzWjdzdszGl3volFMCS0eo-VG9YObqR/view?usp=drivesdk',
     2020,
-    'States',
+    'Regionals',
     'Innovate',
     'Highly Combustible',
     9548,
-    2
+    2,
+    'North Carolina',
+
   ),
 
 new Portfolio(
     'https://drive.google.com/file/d/18YoysmvTL87VVS7EMMoqGdQg_1s4uu53/view?usp=drivesdk',
     2021,
-    'States',
-    'Nothing',
+    'Regionals',
+    'None',
     'If it Ain\'t Broke',
-    9219
+    9219,
+    null,
+    'Rhode Island',
   ),
 
 
@@ -728,15 +779,19 @@ new Portfolio(
     'Innovate',
     'Robogoats',
     8161,
-    3
+    3,
+    null,
+
+    'Oregon',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1rBy0Bx12q6ene0F61kw7RBZFXe84VRR_/view?usp=drivesdk',
     2020,
-    'States',
-    'Nothing',
+    'Regionals',
+    'None',
     'Robogoats',
-    8161
+    8161,
+    'Oregon',
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1ZFqwxkydAWv7es3UOCJgZYlPTE3Con8Z/view?usp=drivesdk',
@@ -745,26 +800,35 @@ new Portfolio(
     'Motivate',
     'Invicta',
     8110,
-    1
+    1,
+    'New York - Long Island',
   ),
 
 
 new Portfolio(
     'https://drive.google.com/file/d/1iPQ5MhfeQa-dkkowfa5nC7ZGRnw08j5k/view?usp=drivesdk',
     2021,
-    'States',
-    'Nothing',
+    'Regionals',
+    'None',
     'F.R.E.N.C.H. F.R.I.E.S.',
-    7341
+    7341,
+    null,
+    'Florida',
+
   ),
 new Portfolio(
     'https://drive.google.com/file/d/1CMDdADSZt5fZOcWfyOfkUnUQpPqDWAno/view?usp=drivesdk',
     2021,
     'Worlds',
-    'Nothing',
+    'None',
     'Cobalt Colts',
-    6547
+    6547,
+    null, 
+
+    'Missouri-Kansas',
 ),
+
+
 
 
 ].sort((a,b) => a.teamNumber - b.teamNumber);

@@ -132,7 +132,24 @@ const isOptionDisabled = (optionValue) => {
         {levelFilter === 'Regionals' || levelFilter === 'Qualifiers' ? (
           <div className="mr-2">
             <Select
-              className="w-64 mt-4 bg-box text-white"
+              className="w-64 mt-4  text-white"
+              styles={{
+                control: (baseStyles) => ({
+                  ...baseStyles,
+                  backgroundColor: '#1e2028',
+                  color: 'white',
+                }),
+                option: (provided) => ({
+                  ...provided,
+                  backgroundColor: '#1e2028',
+                  color: 'white',
+                }),
+                menu: (provided) => ({
+                  ...provided,
+                  backgroundColor: '#1e2028',
+                }),
+              }}
+                                    
               placeholder="(Optional) Select a region"
               isClearable
               options={regionOptions}

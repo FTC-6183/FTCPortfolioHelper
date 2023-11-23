@@ -3,7 +3,7 @@ import PortBar from './Port';
 
 const PortResults = ({ returnUrls }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-cols-min gap-4 px-8 max-w-screen-lg">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-cols-min gap-4 px-8 ">
       {returnUrls.length > 0 ? (
         returnUrls.map((port, index) => (
           <PortBar
@@ -21,7 +21,7 @@ const PortResults = ({ returnUrls }) => {
           />
         ))
       ) : (
-        <div className="ml-9">
+        <div className="ml-9 text-white">
           <p>No Results</p>
         </div>
       )}

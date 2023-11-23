@@ -1,29 +1,27 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const PortBar = (props) => {
   return (
   <div className="bg-box rounded-md">
-    <div className="flex flex-col items-start justify-start p-2.5 rounded-[5px] ">
-      {/* Box for the image */}
-      <div className="overflow-hidden">
-        <img
-          className="w-[100px] h-[100px] object-cover"
-          src="https://ecgrobotics.org/wp-content/uploads/2019/11/logo_10195-300x300.png"
-          alt="frame"
-        />
-      </div>
 
       {/* Text elements */}
       <div className=" p-2 rounded-[5px]">
-        <span className="font-roboto text-white text-lg">{props.name}- Team {props.number}</span>
+        <span className="font-roboto text-white text-lg">#{props.number}- {props.name}</span>
         <br />
         <a href={props.url} target="_blank" className="font-roboto leading-[16.00px] text-blue-500 text-sm w-[94%] sm:w-full">
-          Link.
+          Link <FontAwesomeIcon icon = {faArrowRight} />
         </a>
         <br />
-        <span className="font-roboto text-white text-sm">Awards: {props.award} {props.place} </span>
+        <span className="font-roboto text-orange-600 text-sm">Awards: {props.award} {props.place} </span>
         <br />
         <span className="font-roboto text-white text-sm mb-[13px]">Level: {props.level}</span>
+        <br />
+        <span className="font-roboto text-white text-sm">Season: {props.seasonDisplay}</span>
+        <br />
+        <span className="font-roboto text-white text-sm">Region: {props.region}</span>
+        <br />
+
       </div>
-    </div>
     </div>
   );
 };

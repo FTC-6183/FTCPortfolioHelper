@@ -1,7 +1,7 @@
 const Footer = () => { 
     return (
-        <div className='bg-cyan-500'>
-             <footer className= 'text-center text-purple-900'>Copyright 2023 Team 10195 Night Owls</footer>
+        <div className='bg-dark-bg'>
+             <footer className= 'text-center text-white'>Copyright 2023 Team 10195 Night Owls</footer>
         </div>
        
     );
