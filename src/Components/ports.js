@@ -1,4 +1,4 @@
-import { Portfolio } from '/Users/ayaam/programming/portfolio_website/src/Portfolio';
+import { Portfolio } from '/Users/ayaam/Programming/Robotics/FTCPortfolioHelper/src/Portfolio.js';
 
 export const Ports = [
   new Portfolio(
