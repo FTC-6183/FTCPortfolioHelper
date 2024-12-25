@@ -1,4 +1,4 @@
-import {Portfolio } from "C:\\Users\\ayaam\\programming\\portfolio_website\\src\\Portfolio.js"
+import { Portfolio } from '/Users/ayaam/Programming/Robotics/FTCPortfolioHelper/src/Portfolio.js';
 export const Ports = [
   new Portfolio(
     'https://drive.google.com/file/d/1RIqeMGQNa1HSkolQTh63nJqKEshoHX1m/view?usp=drivesdk',
