@@ -1,67 +1,57 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { Ports } from './ports';
+import { Search } from 'lucide-react';
 import Select from 'react-select';
+import { Ports } from './ports';
 
 
-const Searchbar = ({returnUrls, setReturnUrls}) => { 
-
-      const search = (level, award, region) => {
-        let filteredPorts = Ports;
-        if (award !== 'Any') {
-          filteredPorts = filteredPorts.filter((port) => port.getAward() === award);
-        }
-    
-        if (level !== 'Any') {
-          filteredPorts = filteredPorts.filter((port) => port.getLevel() === level);
-        }
-    
-        if (region !== '') {
-          filteredPorts = filteredPorts.filter((port) => port.getRegion() === region);
-        }
-    
-        setReturnUrls(filteredPorts);
-      };
-      const handleSearch = () => {
-        search(levelFilter, awardFilter, regionFilter);
-      };
-    
-      const [awardFilter, setAwardFilter] = useState('');
+const Searchbar = ({ returnUrls, setReturnUrls }) => {
+  const [awardFilter, setAwardFilter] = useState('');
   const [levelFilter, setLevelFilter] = useState('');
   const [regionFilter, setRegionFilter] = useState('');
+  const [showSelectLevel, setShowSelectLevel] = useState(true);
+  const [showSelectAward, setShowSelectAward] = useState(true);
 
-  const handleAwardFilterChange = (e) => {
-    const newAwardFilter = e.target.value;
+  const search = (level, award, region) => {
+    let filteredPorts = Ports;
+    if (award !== 'Any') {
+      filteredPorts = filteredPorts.filter((port) => port.getAward() === award);
+    }
+    if (level !== 'Any') {
+      filteredPorts = filteredPorts.filter((port) => port.getLevel() === level);
+    }
+    if (region !== '') {
+      filteredPorts = filteredPorts.filter((port) => port.getRegion() === region);
+    }
+    setReturnUrls(filteredPorts);
+  };
+
+  const handleSearch = () => {
+    search(levelFilter, awardFilter, regionFilter);
+  };
+
+  // Your existing filter handling functions remain the same
+  const handleAwardFilterChange = (selectedOption) => {
+    const newAwardFilter = selectedOption.value;
     setAwardFilter(newAwardFilter);
-
-    // Check if there are any portfolios that match the selected award and level
     const hasPortfoliosWithCombination = Ports.some(
       (port) => port.getAward() === newAwardFilter && port.getLevel() === levelFilter
     );
-
-    // Reset the region filter if there are no portfolios with the selected award and level
     if (!hasPortfoliosWithCombination) {
       setRegionFilter('');
     }
-};
+  };
 
-  const handleLevelFilterChange = (e) => {
-    setLevelFilter(e.target.value);
-
-    if (e.target.value !== 'Regionals' && e.target.value !== 'Qualifiers') {
-      setRegionFilter(''); // Reset region filter if level is changed to a different option
+  const handleLevelFilterChange = (selectedOption) => {
+    setLevelFilter(selectedOption.value);
+    if (selectedOption.value !== 'Regionals' && selectedOption.value !== 'Qualifiers') {
+      setRegionFilter('');
     }
   };
 
   const handleRegionFilterChange = (selectedOption) => {
-    if (selectedOption && selectedOption.value !== null) {
-      setRegionFilter(selectedOption.value);
-    } else {
-      setRegionFilter('');
-    }
+    setRegionFilter(selectedOption ? selectedOption.value : '');
   };
-    
+
   const filteredRegions = Array.from(
     new Set(
       Ports.filter(
@@ -70,105 +60,121 @@ const Searchbar = ({returnUrls, setReturnUrls}) => {
     )
   );
 
-  // Generate region options based on the filtered regions
   const regionOptions = filteredRegions
     .map((region) => ({ value: region, label: region }))
     .sort((a, b) => (a.label || '').localeCompare(b.label || '', 'en', { sensitivity: 'base' }));
 
-          const [showSelectLevel, setShowSelectLevel] = useState(true);
-  const [showSelectAward, setShowSelectAward] = useState(true);
-  useEffect(() => {
-      // Check if the user has made a selection for level and award
-      // If yes, hide the "Select a level" and "Select an award" options from the dropdown
-      if (levelFilter !== '') {
-        setShowSelectLevel(false);
+  const awardOptions = [
+    { value: '', label: 'Select an award', isDisabled: true },
+    { value: 'Any', label: 'Any/None' },
+    { value: 'Control', label: 'Control Award' },
+    { value: 'Inspire', label: 'Inspire Award' },
+    { value: 'Motivate', label: 'Motivate Award' },
+    { value: 'Innovate', label: 'Innovate Award' },
+    { value: 'Design', label: 'Design Award' },
+    { value: 'Connect', label: 'Connect Award' },
+    { value: 'Think', label: 'Think Award' }
+  ];
+
+  const levelOptions = [
+    { value: '', label: 'Select a level', isDisabled: true },
+    { value: 'Any', label: 'Any Level' },
+    { value: 'Worlds', label: 'Worlds' },
+    { value: 'Regionals', label: 'Regionals' },
+    { value: 'Qualifiers', label: 'Qualifiers' }
+  ];
+
+  const customSelectStyles = {
+    control: (base) => ({
+      ...base,
+      background: '#1e293b',
+      borderColor: '#3f4865',
+      minWidth: '200px',
+      '&:hover': {
+        borderColor: '#60a5fa'
       }
-      if (awardFilter !== '') {
-        setShowSelectAward(false);
+    }),
+    menu: (base) => ({
+      ...base,
+      background: '#1e293b',
+      border: '1px solid #3f4865'
+    }),
+    option: (base, { isFocused, isSelected }) => ({
+      ...base,
+      background: isSelected ? '#2563eb' : isFocused ? '#334155' : '#1e293b',
+      color: 'white',
+      '&:active': {
+        background: '#2563eb'
       }
-    }, [levelFilter, awardFilter]);
-    // Function to determine if an option should be disabled
-const isOptionDisabled = (optionValue) => {
-  return (
-    (optionValue === 'Any' && !showSelectAward) ||
-    (optionValue === 'Any' && !showSelectLevel)
-  );
-};
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: 'white'
+    }),
+    input: (base) => ({
+      ...base,
+      color: 'white'
+    }),
+    placeholder: (base) => ({
+      ...base,
+      color: '#94a3b8'
+    })
+  };
+
   const disable = !awardFilter || !levelFilter;
+
   return (
-    
-    <div>
-      <div className="px-8" style={{ display: 'flex', justifyContent: 'left' }}>
-        <div className="mr-2">
-          <select
-            className="bg-box border border-gray-300 text-white rounded py-2 px-4 mr-8 mt-4"
-            value={awardFilter}
+    <div className="w-full px-6 py-4">
+      <div className="flex flex-col gap-4 md:flex-row md:items-end">
+        <div className="flex-1 space-y-2">
+          <Select
+            options={awardOptions}
+            styles={customSelectStyles}
             onChange={handleAwardFilterChange}
-          >
-            <option disabled={isOptionDisabled('Any')} value="">Select an award</option>
-            <option value="Any">Any/None</option>
-            <option value="Control">Control</option>
-            <option value="Inspire">Inspire</option>
-            <option value="Motivate">Motivate</option>
-            <option value="Innovate">Innovate</option>
-            <option value="Design">Design</option>
-            <option value="Connect">Connect</option>
-            <option value="Think">Think</option>
-          </select>
+            placeholder="Select an award"
+            className="text-sm"
+          />
         </div>
-        <div className="mr-2">
-          <select
-            className="bg-box border text-white border-gray-300 rounded py-2 mr-8 px-4 mt-4"
-            value={levelFilter}
+        
+        <div className="flex-1 space-y-2">
+          <Select
+            options={levelOptions}
+            styles={customSelectStyles}
             onChange={handleLevelFilterChange}
-          >
-            <option disabled={isOptionDisabled('Any')} value="">Select a level </option>
-            <option value="Any">Any</option>
-            <option value="Worlds">Worlds</option>
-            <option value="Regionals">Regionals</option>
-            <option value="Qualifiers">Qualifiers</option>
-          </select>
+            placeholder="Select a level"
+            className="text-sm"
+          />
         </div>
-        {levelFilter === 'Regionals' || levelFilter === 'Qualifiers' ? (
-          <div className="mr-2">
+
+        {(levelFilter === 'Regionals' || levelFilter === 'Qualifiers') && (
+          <div className="flex-1 space-y-2">
             <Select
-              className="w-64 mt-4  text-white"
-              styles={{
-                control: (baseStyles) => ({
-                  ...baseStyles,
-                  backgroundColor: '#1e2028',
-                  color: 'white',
-                }),
-                option: (provided) => ({
-                  ...provided,
-                  backgroundColor: '#1e2028',
-                  color: 'white',
-                }),
-                menu: (provided) => ({
-                  ...provided,
-                  backgroundColor: '#1e2028',
-                }),
-              }}
-                                    
-              placeholder="(Optional) Select a region"
-              isClearable
               options={regionOptions}
+              styles={customSelectStyles}
               onChange={handleRegionFilterChange}
+              placeholder="Select a region (Optional)"
+              isClearable
+              className="text-sm"
             />
           </div>
-        ) : null}
-        <button   className={`${disable ? 'bg-slate-500' : 'bg-owl-blue'} text-white py-2 px-4 rounded-full mt-4`}
-  onClick={handleSearch} disabled = {disable}>
-          <FontAwesomeIcon icon={faSearch} className="mr-1" /> Search
+        )}
+
+        <button
+          onClick={handleSearch}
+          disabled={disable}
+          className={`flex items-center justify-center rounded-lg px-6 py-2.5 text-sm font-medium text-white transition-colors
+            ${disable ? 'bg-slate-600 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
+        >
+          <Search className="mr-2 h-4 w-4" />
+          Search
         </button>
       </div>
-      <div className="ml-9 text-white">
-        <p>Search results: {returnUrls.length}</p>
+
+      <div className="mt-4 text-sm text-gray-400">
+        Search results: {returnUrls.length}
       </div>
     </div>
   );
-
-}
-
+};
 
 export default Searchbar;

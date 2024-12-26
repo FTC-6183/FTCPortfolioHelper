@@ -12,6 +12,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "css-loader": "^6.7.3",
+    "firebase": "^11.1.0",
+    "lucide-react": "^0.469.0",
     "pdf.js-extract": "^0.2.1",
     "pdfjs-dist": "^3.6.172",
     "react": "^18.2.0",
